@@ -10,7 +10,7 @@
 #define IntelligentSuggester_Constants_h
 
 #define FSO_CLIENT_ID [[NSBundle mainBundle] objectForInfoDictionaryKey:@"FoursquareClientID"]
-#define FSO_CLIENT_SECRET [[NSBundle mainBundle] objectForInfoDictionaryKey:@"FoursquareClientSecret"]
+//#define FSO_CLIENT_SECRET [[NSBundle mainBundle] objectForInfoDictionaryKey:@"FoursquareClientSecret"]
 #define FSO_CALLBACK [[NSBundle mainBundle] objectForInfoDictionaryKey:@"FoursquareCallback"]
 
 
