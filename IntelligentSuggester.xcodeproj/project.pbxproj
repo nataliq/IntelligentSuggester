@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD00DC84188579F300E1D2DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DC83188579F300E1D2DB /* Foundation.framework */; };
+		FD00DC86188579F300E1D2DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DC85188579F300E1D2DB /* CoreGraphics.framework */; };
+		FD00DC88188579F300E1D2DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DC87188579F300E1D2DB /* UIKit.framework */; };
+		FD00DC8A188579F300E1D2DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DC89188579F300E1D2DB /* CoreData.framework */; };
+		FD00DC90188579F300E1D2DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD00DC8E188579F300E1D2DB /* InfoPlist.strings */; };
+		FD00DC92188579F300E1D2DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00DC91188579F300E1D2DB /* main.m */; };
+		FD00DC96188579F300E1D2DB /* ISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00DC95188579F300E1D2DB /* ISAppDelegate.m */; };
+		FD00DC99188579F300E1D2DB /* IntelligentSuggester.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD00DC97188579F300E1D2DB /* IntelligentSuggester.xcdatamodeld */; };
+		FD00DC9B188579F300E1D2DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD00DC9A188579F300E1D2DB /* Images.xcassets */; };
+		FD00DCA2188579F300E1D2DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DCA1188579F300E1D2DB /* XCTest.framework */; };
+		FD00DCA3188579F300E1D2DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DC83188579F300E1D2DB /* Foundation.framework */; };
+		FD00DCA4188579F300E1D2DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DC87188579F300E1D2DB /* UIKit.framework */; };
+		FD00DCA5188579F300E1D2DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DC89188579F300E1D2DB /* CoreData.framework */; };
+		FD00DCAD188579F300E1D2DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD00DCAB188579F300E1D2DB /* InfoPlist.strings */; };
+		FD00DCAF188579F300E1D2DB /* IntelligentSuggesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00DCAE188579F300E1D2DB /* IntelligentSuggesterTests.m */; };
+		FD00DCB918857A0D00E1D2DB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD00DCB818857A0D00E1D2DB /* Storyboard.storyboard */; };
+		FD00DCBB18857A4F00E1D2DB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD00DCBA18857A4F00E1D2DB /* FacebookSDK.framework */; };
+		FD00DCBE18857A6100E1D2DB /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00DCBD18857A6100E1D2DB /* FSOAuth.m */; };
+		FD00DCC218857BA400E1D2DB /* ISLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00DCC118857BA400E1D2DB /* ISLoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD00DCA6188579F300E1D2DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD00DC78188579F300E1D2DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD00DC7F188579F300E1D2DB;
+			remoteInfo = IntelligentSuggester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD00DC80188579F300E1D2DB /* IntelligentSuggester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelligentSuggester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD00DC83188579F300E1D2DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD00DC85188579F300E1D2DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD00DC87188579F300E1D2DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD00DC89188579F300E1D2DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FD00DC8D188579F300E1D2DB /* IntelligentSuggester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntelligentSuggester-Info.plist"; sourceTree = "<group>"; };
+		FD00DC8F188579F300E1D2DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD00DC91188579F300E1D2DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD00DC93188579F300E1D2DB /* IntelligentSuggester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntelligentSuggester-Prefix.pch"; sourceTree = "<group>"; };
+		FD00DC94188579F300E1D2DB /* ISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAppDelegate.h; sourceTree = "<group>"; };
+		FD00DC95188579F300E1D2DB /* ISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISAppDelegate.m; sourceTree = "<group>"; };
+		FD00DC98188579F300E1D2DB /* IntelligentSuggester.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IntelligentSuggester.xcdatamodel; sourceTree = "<group>"; };
+		FD00DC9A188579F300E1D2DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD00DCA0188579F300E1D2DB /* IntelligentSuggesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelligentSuggesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD00DCA1188579F300E1D2DB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FD00DCAA188579F300E1D2DB /* IntelligentSuggesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntelligentSuggesterTests-Info.plist"; sourceTree = "<group>"; };
+		FD00DCAC188579F300E1D2DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD00DCAE188579F300E1D2DB /* IntelligentSuggesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntelligentSuggesterTests.m; sourceTree = "<group>"; };
+		FD00DCB818857A0D00E1D2DB /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		FD00DCBA18857A4F00E1D2DB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		FD00DCBC18857A6100E1D2DB /* FSOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOAuth.h; sourceTree = "<group>"; };
+		FD00DCBD18857A6100E1D2DB /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
+		FD00DCC018857BA400E1D2DB /* ISLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISLoginViewController.h; sourceTree = "<group>"; };
+		FD00DCC118857BA400E1D2DB /* ISLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISLoginViewController.m; sourceTree = "<group>"; };
+		FD00DCC318857BD500E1D2DB /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD00DC7D188579F300E1D2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD00DC86188579F300E1D2DB /* CoreGraphics.framework in Frameworks */,
+				FD00DCBB18857A4F00E1D2DB /* FacebookSDK.framework in Frameworks */,
+				FD00DC8A188579F300E1D2DB /* CoreData.framework in Frameworks */,
+				FD00DC88188579F300E1D2DB /* UIKit.framework in Frameworks */,
+				FD00DC84188579F300E1D2DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD00DC9D188579F300E1D2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD00DCA2188579F300E1D2DB /* XCTest.framework in Frameworks */,
+				FD00DCA5188579F300E1D2DB /* CoreData.framework in Frameworks */,
+				FD00DCA4188579F300E1D2DB /* UIKit.framework in Frameworks */,
+				FD00DCA3188579F300E1D2DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD00DC77188579F300E1D2DB = {
+			isa = PBXGroup;
+			children = (
+				FD00DC8B188579F300E1D2DB /* IntelligentSuggester */,
+				FD00DCA8188579F300E1D2DB /* IntelligentSuggesterTests */,
+				FD00DC82188579F300E1D2DB /* Frameworks */,
+				FD00DC81188579F300E1D2DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD00DC81188579F300E1D2DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD00DC80188579F300E1D2DB /* IntelligentSuggester.app */,
+				FD00DCA0188579F300E1D2DB /* IntelligentSuggesterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD00DC82188579F300E1D2DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD00DCBA18857A4F00E1D2DB /* FacebookSDK.framework */,
+				FD00DC83188579F300E1D2DB /* Foundation.framework */,
+				FD00DC85188579F300E1D2DB /* CoreGraphics.framework */,
+				FD00DC87188579F300E1D2DB /* UIKit.framework */,
+				FD00DC89188579F300E1D2DB /* CoreData.framework */,
+				FD00DCA1188579F300E1D2DB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD00DC8B188579F300E1D2DB /* IntelligentSuggester */ = {
+			isa = PBXGroup;
+			children = (
+				FD00DC94188579F300E1D2DB /* ISAppDelegate.h */,
+				FD00DC95188579F300E1D2DB /* ISAppDelegate.m */,
+				FD00DCC018857BA400E1D2DB /* ISLoginViewController.h */,
+				FD00DCC118857BA400E1D2DB /* ISLoginViewController.m */,
+				FD00DCB818857A0D00E1D2DB /* Storyboard.storyboard */,
+				FD00DC9A188579F300E1D2DB /* Images.xcassets */,
+				FD00DC97188579F300E1D2DB /* IntelligentSuggester.xcdatamodeld */,
+				FD00DCC318857BD500E1D2DB /* Constants.h */,
+				FD00DC8C188579F300E1D2DB /* Supporting Files */,
+			);
+			path = IntelligentSuggester;
+			sourceTree = "<group>";
+		};
+		FD00DC8C188579F300E1D2DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD00DCBF18857A6500E1D2DB /* Foursquare connection */,
+				FD00DC8D188579F300E1D2DB /* IntelligentSuggester-Info.plist */,
+				FD00DC8E188579F300E1D2DB /* InfoPlist.strings */,
+				FD00DC91188579F300E1D2DB /* main.m */,
+				FD00DC93188579F300E1D2DB /* IntelligentSuggester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD00DCA8188579F300E1D2DB /* IntelligentSuggesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD00DCAE188579F300E1D2DB /* IntelligentSuggesterTests.m */,
+				FD00DCA9188579F300E1D2DB /* Supporting Files */,
+			);
+			path = IntelligentSuggesterTests;
+			sourceTree = "<group>";
+		};
+		FD00DCA9188579F300E1D2DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD00DCAA188579F300E1D2DB /* IntelligentSuggesterTests-Info.plist */,
+				FD00DCAB188579F300E1D2DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD00DCBF18857A6500E1D2DB /* Foursquare connection */ = {
+			isa = PBXGroup;
+			children = (
+				FD00DCBC18857A6100E1D2DB /* FSOAuth.h */,
+				FD00DCBD18857A6100E1D2DB /* FSOAuth.m */,
+			);
+			name = "Foursquare connection";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD00DC7F188579F300E1D2DB /* IntelligentSuggester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD00DCB2188579F300E1D2DB /* Build configuration list for PBXNativeTarget "IntelligentSuggester" */;
+			buildPhases = (
+				FD00DC7C188579F300E1D2DB /* Sources */,
+				FD00DC7D188579F300E1D2DB /* Frameworks */,
+				FD00DC7E188579F300E1D2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelligentSuggester;
+			productName = IntelligentSuggester;
+			productReference = FD00DC80188579F300E1D2DB /* IntelligentSuggester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD00DC9F188579F300E1D2DB /* IntelligentSuggesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD00DCB5188579F300E1D2DB /* Build configuration list for PBXNativeTarget "IntelligentSuggesterTests" */;
+			buildPhases = (
+				FD00DC9C188579F300E1D2DB /* Sources */,
+				FD00DC9D188579F300E1D2DB /* Frameworks */,
+				FD00DC9E188579F300E1D2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD00DCA7188579F300E1D2DB /* PBXTargetDependency */,
+			);
+			name = IntelligentSuggesterTests;
+			productName = IntelligentSuggesterTests;
+			productReference = FD00DCA0188579F300E1D2DB /* IntelligentSuggesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD00DC78188579F300E1D2DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Siyana Slavova";
+				TargetAttributes = {
+					FD00DC9F188579F300E1D2DB = {
+						TestTargetID = FD00DC7F188579F300E1D2DB;
+					};
+				};
+			};
+			buildConfigurationList = FD00DC7B188579F300E1D2DB /* Build configuration list for PBXProject "IntelligentSuggester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD00DC77188579F300E1D2DB;
+			productRefGroup = FD00DC81188579F300E1D2DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD00DC7F188579F300E1D2DB /* IntelligentSuggester */,
+				FD00DC9F188579F300E1D2DB /* IntelligentSuggesterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD00DC7E188579F300E1D2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD00DC90188579F300E1D2DB /* InfoPlist.strings in Resources */,
+				FD00DC9B188579F300E1D2DB /* Images.xcassets in Resources */,
+				FD00DCB918857A0D00E1D2DB /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD00DC9E188579F300E1D2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD00DCAD188579F300E1D2DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD00DC7C188579F300E1D2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD00DC96188579F300E1D2DB /* ISAppDelegate.m in Sources */,
+				FD00DCC218857BA400E1D2DB /* ISLoginViewController.m in Sources */,
+				FD00DC92188579F300E1D2DB /* main.m in Sources */,
+				FD00DCBE18857A6100E1D2DB /* FSOAuth.m in Sources */,
+				FD00DC99188579F300E1D2DB /* IntelligentSuggester.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD00DC9C188579F300E1D2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD00DCAF188579F300E1D2DB /* IntelligentSuggesterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD00DCA7188579F300E1D2DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD00DC7F188579F300E1D2DB /* IntelligentSuggester */;
+			targetProxy = FD00DCA6188579F300E1D2DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD00DC8E188579F300E1D2DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD00DC8F188579F300E1D2DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD00DCAB188579F300E1D2DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD00DCAC188579F300E1D2DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD00DCB0188579F300E1D2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD00DCB1188579F300E1D2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD00DCB3188579F300E1D2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/siyana.slavova/Documents/iOS\\ Projects/IntelligentSuggester",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntelligentSuggester/IntelligentSuggester-Prefix.pch";
+				INFOPLIST_FILE = "IntelligentSuggester/IntelligentSuggester-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD00DCB4188579F300E1D2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/siyana.slavova/Documents/iOS\\ Projects/IntelligentSuggester",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntelligentSuggester/IntelligentSuggester-Prefix.pch";
+				INFOPLIST_FILE = "IntelligentSuggester/IntelligentSuggester-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FD00DCB6188579F300E1D2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntelligentSuggester.app/IntelligentSuggester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntelligentSuggester/IntelligentSuggester-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IntelligentSuggesterTests/IntelligentSuggesterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FD00DCB7188579F300E1D2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntelligentSuggester.app/IntelligentSuggester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntelligentSuggester/IntelligentSuggester-Prefix.pch";
+				INFOPLIST_FILE = "IntelligentSuggesterTests/IntelligentSuggesterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD00DC7B188579F300E1D2DB /* Build configuration list for PBXProject "IntelligentSuggester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD00DCB0188579F300E1D2DB /* Debug */,
+				FD00DCB1188579F300E1D2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD00DCB2188579F300E1D2DB /* Build configuration list for PBXNativeTarget "IntelligentSuggester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD00DCB3188579F300E1D2DB /* Debug */,
+				FD00DCB4188579F300E1D2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD00DCB5188579F300E1D2DB /* Build configuration list for PBXNativeTarget "IntelligentSuggesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD00DCB6188579F300E1D2DB /* Debug */,
+				FD00DCB7188579F300E1D2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD00DC97188579F300E1D2DB /* IntelligentSuggester.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD00DC98188579F300E1D2DB /* IntelligentSuggester.xcdatamodel */,
+			);
+			currentVersion = FD00DC98188579F300E1D2DB /* IntelligentSuggester.xcdatamodel */;
+			path = IntelligentSuggester.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD00DC78188579F300E1D2DB /* Project object */;
+}
