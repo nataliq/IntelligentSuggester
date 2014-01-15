@@ -53,7 +53,7 @@
 {
     // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
     BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
-    
+    NSLog(@"%@",  [[FBSession activeSession] accessTokenData]);
     // You can add your app-specific url handling code here if needed
     
     return wasHandled;

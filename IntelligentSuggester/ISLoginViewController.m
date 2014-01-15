@@ -9,8 +9,11 @@
 #import "ISLoginViewController.h"
 #import "FSOAuth.h"
 #import "Constants.h"
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface ISLoginViewController ()
+@interface ISLoginViewController () <FBLoginViewDelegate>
+
+@property (weak, nonatomic) IBOutlet FBLoginView *fbLoginView;
 
 @end
 
@@ -29,6 +32,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.fbLoginView.delegate = self;
+#warning Set read permissions
+    self.fbLoginView.readPermissions = @[@"basic_info", @"email", @"user_likes"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,12 +43,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - FBLoginViewDelegate methods
 
+-(void)loginView:(FBLoginView *)loginView handleError:(NSError *)error
+{
+    
+}
+
+-(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
+{
+    //Return user data
+}
+
+-(void)loginViewShowingLoggedInUser:(FBLoginView *)loginView
+{
+    FBAccessTokenData *fbTokenData = [[FBSession activeSession] accessTokenData];
+    NSLog(@"%@", fbTokenData);
+}
+
+-(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
+{
+    
+}
+
+#pragma mark - Foursquare Connection
 - (IBAction)foursquareConnect:(UIButton *)sender {
     FSOAuthStatusCode statusCode = [FSOAuth authorizeUserUsingClientId:FSO_CLIENT_ID
                                                      callbackURIString:FSO_CALLBACK
                                                   allowShowingAppStore:YES];
-    
     NSString *resultText = nil;
     
     switch (statusCode) {

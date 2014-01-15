@@ -35,6 +35,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="fbLoginView" destination="rZI-vQ-8BH" id="mPW-lc-UxT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sdc-Xm-sdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
