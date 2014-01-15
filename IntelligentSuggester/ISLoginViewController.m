@@ -14,6 +14,9 @@
 @interface ISLoginViewController () <FBLoginViewDelegate>
 
 @property (weak, nonatomic) IBOutlet FBLoginView *fbLoginView;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet FBProfilePictureView *profilePictureView;
+
 
 @end
 
@@ -34,7 +37,7 @@
 	// Do any additional setup after loading the view.
     self.fbLoginView.delegate = self;
 #warning Set read permissions
-    self.fbLoginView.readPermissions = @[@"basic_info", @"email", @"user_likes"];
+    //self.fbLoginView.readPermissions = @[@"basic_info", @"email", @"user_likes"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,16 +56,23 @@
 -(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
 {
     //Return user data
+    
+    //From FBProfilePictureView
+    self.profilePictureView.profileID = user.id;
+    self.userNameLabel.text = user.name;
 }
 
 -(void)loginViewShowingLoggedInUser:(FBLoginView *)loginView
 {
+    
     FBAccessTokenData *fbTokenData = [[FBSession activeSession] accessTokenData];
     NSLog(@"%@", fbTokenData);
 }
 
 -(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
 {
+    self.profilePictureView.profileID = @"";
+    self.userNameLabel.text = @"";
     
 }
 
